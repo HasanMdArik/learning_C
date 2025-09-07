@@ -1,0 +1,14 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "compile and run",
+      "type": "shell",
+      "command": "gcc -std=c99 -o ./bin/${fileBasenameNoExtension} ${file} && ./bin/${fileBasenameNoExtension} < ./input.txt > ./output.txt",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    }
+  ]
+}
