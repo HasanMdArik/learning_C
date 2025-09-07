@@ -18,8 +18,9 @@ int main()
             copy(line, longestLine);
         }
 
+    printf("Length of the longest line: %d\n", maxLen);
     printf("%s", longestLine);
-    printf("Length of the longest line: %d", maxLen);
+
     return 0;
 }
 
