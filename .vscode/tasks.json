@@ -4,7 +4,7 @@
     {
       "label": "compile and run",
       "type": "shell",
-      "command": "gcc -std=c99 -o ./bin/${fileBasenameNoExtension} ${file} && ./bin/${fileBasenameNoExtension} < ./input.txt > ./output.txt",
+      "command": "gcc -std=c99 -o ./bin/${fileBasenameNoExtension} ${file} -lm && ./bin/${fileBasenameNoExtension} < ./input.txt > ./output.txt",
       "group": {
         "kind": "build",
         "isDefault": true
